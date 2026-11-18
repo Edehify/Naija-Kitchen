@@ -11,15 +11,21 @@ const contentContainer = document.getElementById("content");
 
 homeButton.addEventListener("click", () => {
     contentContainer.innerHTML = createHomePage();
+    navLinks.classList.remove("show");
+    toggleMenuButton.setAttribute("aria-expanded", "false");
 });
 
 menuButton.addEventListener("click", () => {
     contentContainer.innerHTML = createMenuPage();
     setupMenuInteraction();
+    navLinks.classList.remove("show");
+    toggleMenuButton.setAttribute("aria-expanded", "false");
 });
 
 contactButton.addEventListener("click", () => {
     contentContainer.innerHTML = createContactPage();
+    navLinks.classList.remove("show");
+    toggleMenuButton.setAttribute("aria-expanded", "false");
 });
 
 
