@@ -36,3 +36,10 @@ toggleMenuButton.addEventListener("click", () => {
     navLinks.classList.toggle("show");
     toggleMenuButton.setAttribute("aria-expanded", navLinks.classList.contains("show"));
 });
+
+
+contentContainer.addEventListener("click", (e) => {
+    if (e.target.closest("#explore-button")) {
+        menuButton.click();
+    }
+});

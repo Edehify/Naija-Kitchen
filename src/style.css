@@ -299,6 +299,8 @@ background-color: var(--primary-color);
 color: var(--white);
 text-align: center;
 padding: 25px 20px;
+border-radius: 10px;
+
 }
 
 #menu-toggle {
@@ -330,4 +332,10 @@ padding: 25px 20px;
     }
 
    
+}  
+
+.logo {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
 }

@@ -1,3 +1,8 @@
+import egusiSoupImage from "../assets/images/egusi-soup.jpg";
+import heroPageImage from "../assets/images/hero-page.jpg";
+import jollofRiceImage from "../assets/images/jollof-rice.jpg";
+import grilledFishImage from "../assets/images/grilled-fish.jpg";
+
 export function createHomePage() {
     return `
             <div class="home-page">
@@ -5,8 +10,8 @@ export function createHomePage() {
                     <h1>Welcome to Naija Kitchen</h1>
                     <p>Experience the authentic taste of Nigeria with our delicious dishes.</p>
                     <p>From traditional favorites to modern twists, we bring the flavors of Nigeria to your table.</p>
-                    <img src="images/hero-image.jpg" alt="Delicious Nigerian dishes">
-                    <button>Explore Our Menu</button>
+                    <img src=${heroPageImage} alt="Delicious Nigerian dishes">
+                    <button id="explore-button">Explore Our Menu</button>
                 </section>
 
                 <section class="about">
@@ -19,17 +24,17 @@ export function createHomePage() {
                 <section class="featured-dishes">
                     <h2>Featured Dishes</h2>
                     <div class="dish">
-                        <img src="images/jollof-rice.jpg" alt="Jollof Rice">
+                        <img src=${jollofRiceImage} alt="Jollof Rice">
                         <h3>Jollof Rice</h3>
                         <p>A classic West African dish made with rice, tomatoes, and a blend of spices. Served with your choice of protein.</p>
                     </div>
                     <div class="dish">
-                        <img src="images/egusi-soup.jpg" alt="Egusi Soup">
+                    <img src=${egusiSoupImage} alt="Egusi Soup">
                         <h3>Egusi Soup</h3>
                         <p>A rich and flavorful soup made with ground melon seeds, vegetables, and your choice of meat or fish. Served with pounded yam or fufu.</p>
                     </div>
                     <div class="dish">
-                        <img src="images/fish.jpg" alt="Grilled Fish">
+                        <img src=${grilledFishImage} alt="Grilled Fish">
                         <h3>Grilled Fish</h3>
                         <p>Freshly caught fish grilled to perfection and seasoned with traditional Nigerian spices. Served with rice and salad.</p>
                     </div>
@@ -53,3 +58,5 @@ export function createHomePage() {
             </div>
     `;
 }
+
+
